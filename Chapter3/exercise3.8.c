@@ -15,8 +15,9 @@ int main(void) {
     spoon = ounce * OUNCE_TO_SPOON;
     tea_spoon = spoon * SPOON_TO_TEA;
 
-    printf("%.1f cup equals %.1f pint, %.1f ounce, %.1f spoon, %.1f tea_spoon.\n",
-    cup, pint, ounce, spoon, tea_spoon);
+    printf(
+        "%.1f cup equals %.1f pint, %.1f ounce, %.1f spoon, %.1f tea_spoon.\n",
+        cup, pint, ounce, spoon, tea_spoon);
 
     return 0;
 }
