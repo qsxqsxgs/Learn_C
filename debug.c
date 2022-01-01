@@ -1,3 +1,4 @@
+/* debug.c -- 调试调试器 */
 #include <stdio.h>
 
 int main(void) {
