@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main(void) {
-    int width;
+    int  width;
     char sur[10];
 
     printf("Enter your name: ");

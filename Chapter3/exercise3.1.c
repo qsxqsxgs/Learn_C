@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(void) {
-    int big_int = INT_MAX;
+    int   big_int = INT_MAX;
     float big_float = FLT_MAX;
     float small_float = 10.0 / 3;
 

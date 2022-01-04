@@ -2,7 +2,7 @@
 
 int main(void) {
     float height;
-    char name[10];
+    char  name[10];
 
     printf("Enter your height and name: ");
     scanf("%f %s", &height, name);

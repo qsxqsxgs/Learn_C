@@ -3,7 +3,7 @@
 //#define MASS_PER_MOLE 3E-23
 
 int main(void) {
-    float qua;
+    float  qua;
     double gram;
     double mole;
 
