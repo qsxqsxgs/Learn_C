@@ -10,9 +10,9 @@ int main(void) {
     printf("Enter how many cup: ");
     scanf("%f", &cup);
 
-    pint = cup / PINT_TO_CUP;
-    ounce = cup * CUP_TO_OUNCE;
-    spoon = ounce * OUNCE_TO_SPOON;
+    pint      = cup / PINT_TO_CUP;
+    ounce     = cup * CUP_TO_OUNCE;
+    spoon     = ounce * OUNCE_TO_SPOON;
     tea_spoon = spoon * SPOON_TO_TEA;
 
     printf(
