@@ -28,7 +28,7 @@ void Temperatures(double n) {
     cels = PARA_1 / PARA_2 * (n - PARA_3);
     kelv = cels + PARA_4;
 
-    printf("Your input temperatures: %.2lf\n", n);
-    printf("Celsius temperatures: %.2lf\n", cels);
-    printf("Kelvin temperatures: %.2lf\n", kelv);
+    printf("Your input temperatures: %.2f\n", n);
+    printf("Celsius temperatures: %.2f\n", cels);
+    printf("Kelvin temperatures: %.2f\n", kelv);
 }
