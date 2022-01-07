@@ -1,4 +1,4 @@
-/* test.c -- C primer plus复习题程序demo */
+/* test.c -- C primer plus程序demo */
 #include <stdio.h>
 
 int main(void) {
