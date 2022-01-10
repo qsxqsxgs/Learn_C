@@ -2,10 +2,15 @@
 #include <stdio.h>
 
 int main(void) {
-    int k;
-    for (k = 1, printf("%d: Hi\n", k);
-         printf("k = %d\n", k), k * k < 26;
-         k += 2, printf("Now k is %d\n", k))
-         printf("k is %d in the loop\n", k);
+    int i = 0;
+    while (i < 3) {
+        switch (i++) {
+        case 0: printf("fat ");
+        case 1: printf("hat ");
+        case 2: printf("cat ");
+        default: printf("Oh no!");
+        }
+        putchar('\n');
+    }
     return 0;
 }

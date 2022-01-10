@@ -30,7 +30,7 @@ int main(void) {
 
     if (prev != '\n')
         p_lines = 1;
-    printf("characters = %ld, words = %d, lines = %d,",
+    printf("characters = %ld, words = %d, lines = %d, ",
            n_chars, n_words, n_lines);
     printf("partial lines = %d\n", p_lines);
 
