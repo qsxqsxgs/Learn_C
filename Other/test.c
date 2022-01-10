@@ -1,16 +1,19 @@
-/* test.c -- C primer plus程序demo */
 #include <stdio.h>
-
 int main(void) {
-    int i = 0;
-    while (i < 3) {
-        switch (i++) {
-        case 0: printf("fat ");
-        case 1: printf("hat ");
-        case 2: printf("cat ");
-        default: printf("Oh no!");
+    char ch;
+    while ((ch = getchar()) != '#') {
+        if (ch != '\n') {
+            printf("Step 1\n");
+            if (ch != 'c') {
+                if (ch == 'b')
+                    break;
+                if (ch == 'h')
+                    printf("Step 3\n");
+                printf("Step 2\n");
+                printf("Step 3\n");
+            }
         }
-        putchar('\n');
     }
+    printf("Done\n");
     return 0;
 }
