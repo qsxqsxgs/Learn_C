@@ -11,7 +11,7 @@ int main(void) {
             time++;
         prev = ch;
     }
-    printf("Number of string \'ei\' is: %d", time);
+    printf("Number of string \'ei\' are: %d", time);
 
     return 0;
 }
