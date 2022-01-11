@@ -5,7 +5,7 @@ int main(void) {
     char ch;
     int  loop = 0;
 
-    printf("Enter a set of characters: ");
+    printf("Enter set of characters: ");
     while ((ch = getchar()) != '#') {
         if (ch == '\n') {
             printf("\nEnter another set (# to quit): ");
