@@ -18,6 +18,7 @@ int main(void) {
            "3) Married      "
            "4) Divorced\n");
     printf("Choose your state from the form: ");
+
     while (scanf("%d", &state) == 1) {
         if (state < 1 || state > 4) {
             printf("Please enter correct number from the form: ");
