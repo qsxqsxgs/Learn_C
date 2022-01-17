@@ -52,7 +52,7 @@ int main(void) {
         default:;
         }
 
-        printf("Your tax amount are: %.2f\n", tax);
+        printf("Your tax amount are: %.2f\n\n", tax);
         printf("1) Bachelor     "
                "2) Placeholder\n"
                "3) Married      "
