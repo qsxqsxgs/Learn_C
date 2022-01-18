@@ -18,7 +18,11 @@ int main(void) {
     bool  flag;
     char  stat;
     float temp;
-    float sum             = 0;
+
+    float sum;
+    float dis;
+    float fee;
+
     float pound_artichoke = 0;
     float pound_beet      = 0;
     float pound_carrot    = 0;
@@ -66,5 +70,8 @@ int main(void) {
     }
 
     sum = pound_artichoke + pound_beet + pound_carrot;
+    dis = (sum >= DISCOUNT_CILL) ?
+              sum * DISCOUNT_RATE :
+              0;
     return 0;
 }
