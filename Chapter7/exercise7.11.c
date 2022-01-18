@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 #define PRICE_ARTICHOKE 2.05
 #define PRICE_BEET 1.15
@@ -15,7 +14,6 @@
 #define PACKAGE_FEE_PER_EXCEED 0.5
 
 int main(void) {
-    bool  flag;
     char  stat;
     float temp;
 
@@ -34,33 +32,38 @@ int main(void) {
            "q) Quit\n");
     printf("Select one item from the form: ");
 
-    flag = true;
-    while (scanf(" %c", &stat) == 1) {
+    while ((stat = getchar()) != 'q') {
         switch (stat) {
         case 'a':
             printf("Enter weight of artichoke: ");
             scanf("%f", &temp);
-            pound_artichoke += temp;
+            if (temp > 0)
+                pound_artichoke += temp;
+            else {
+                printf("Please enter correct weight!\n");
+            }
             break;
         case 'b':
             printf("Enter weight of beet: ");
             scanf("%f", &temp);
-            pound_beet += temp;
+            if (temp > 0)
+                pound_beet += temp;
+            else {
+                printf("Please enter correct weight!\n");
+            }
             break;
         case 'c':
             printf("Enter weight of carrot: ");
             scanf("%f", &temp);
-            pound_carrot += temp;
-            break;
-        case 'q':
-            flag = false;
+            if (temp > 0)
+                pound_carrot += temp;
+            else {
+                printf("Please enter correct weight!\n");
+            }
             break;
         default:
             printf("Please select correct item!\n");
         }
-
-        if (flag == false)
-            break;
 
         printf("\n");
         printf("a) Artichoke     "
@@ -68,6 +71,7 @@ int main(void) {
                "c) Carrot        "
                "q) Quit\n");
         printf("Select one item from the form: ");
+        fflush(stdin);
     }
 
     total_weight = pound_artichoke + pound_beet + pound_carrot;
