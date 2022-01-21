@@ -2,6 +2,7 @@
 
 char get_first(void);
 char get_choice(void);
+int  get_int(void);
 void count(void);
 
 int main(void) {
@@ -52,11 +53,23 @@ char get_first(void) {
     return ch;
 }
 
+int get_int(void) {
+    int  input;
+    char ch;
+    while (scanf("%d", &input) != 1) {
+        while ((ch = getchar()) != '\n')
+            putchar(ch); // 处理错误输出
+        printf(" is not an integer.\nPlease enter an ");
+        printf("integer value, such as 25, -178, or 3: ");
+    }
+    return input;
+}
+
 void count(void) {
     int n, i;
 
     printf("Count how far? Enter an integer:\n");
-    scanf("%d", &n);
+    n = get_int();
 
     for (i = 1; i <= n; i++)
         printf("%d\n", i);
